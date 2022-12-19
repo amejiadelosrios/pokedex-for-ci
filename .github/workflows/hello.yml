@@ -15,6 +15,6 @@ jobs:
           echo "Hola midu!"
       - name: Dime la fecha
         run: date
-      - run: ls -l
+        run: ls -l
       - name: echo mensaje 2
-      - run: date
+        run: date
