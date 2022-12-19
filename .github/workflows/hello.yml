@@ -16,3 +16,5 @@ jobs:
       - name: Dime la fecha
         run: date
       - run: ls -l
+      - name: echo mensaje 2
+        run: date
