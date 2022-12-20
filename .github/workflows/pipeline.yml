@@ -1,4 +1,4 @@
-name: Deployment Pipeline Alejo
+name: Deployment Pipeline
 
 on:
   push:
@@ -12,9 +12,9 @@ jobs:
       - uses: actions/checkout@v2
       with:
         fetch-depth: 0
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v2
       with:
-        node-version: '16'
+        node-version: '14'
       - name: Install dependencies
         run: npm install --no-audit --no-fund --no-optional
       - name: Lint
